@@ -1,21 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {geodexTheme} from './styles/theme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Paper from 'material-ui/Paper';
-
-import AppBar from 'material-ui/AppBar';
-
-import MyAwesomeReactComponent from './MyAwesomeReactComponent.jsx';
+import Layout from './layout.jsx';
 
 const App = () => (
   
-  <MuiThemeProvider muiTheme={getMuiTheme() }>
-      <AppBar
-        title="geodex"
-        showMenuIconButton={false}  
-        >
-      </AppBar>
+  <MuiThemeProvider muiTheme={getMuiTheme(geodexTheme) }>
+      <Layout />
   </MuiThemeProvider>
     
 );
