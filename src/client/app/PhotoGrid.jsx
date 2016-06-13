@@ -7,8 +7,8 @@ const styles = {
     bottom: '0px'
   },
   photo: {
-    height:'70px',
-    width:'70px'
+    height:70,
+    width:70
   }
 };
 

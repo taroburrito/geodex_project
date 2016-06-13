@@ -1,14 +1,15 @@
 import React from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-
 import Paper from 'material-ui/Paper';
+import TextField from 'material-ui/TextField';
+import IconButton from 'material-ui/IconButton';
 
 import PhotoGrid from './PhotoGrid.jsx';
 
 const styles = {
   profilePic: {
-    height: 140,
-    width: 140
+    height: 160,
+    width: 160
   },
   testBorder: {
     //border: '1px solid red',
@@ -35,11 +36,16 @@ class Self extends React.Component {
               </CardMedia> 
             </div>
             <div className='pure-u-8-24' style={styles.testBorder}>
-              <CardHeader title={this.props.name}
-                subtitle={this.props.location}>
-              </CardHeader>
+              <CardTitle title={this.props.name}
+                subtitle={this.props.location} />
               
-            </div>
+              <TextField 
+                floatingLabelText="Post to geodex..."
+                multiLine={true}
+                rows={2}
+                fullWidth={true}
+                />
+               </div>
             <div className='pure-u-9-24' style={styles.testBorder}>
               <CardText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

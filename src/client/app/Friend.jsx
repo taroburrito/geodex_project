@@ -31,9 +31,8 @@ class Friend extends React.Component {
              </CardMedia> 
           </div>
           <div className='pure-u-8-24' style={styles.testBorder}>
-            <CardHeader title={this.props.name}
-              subtitle={this.props.location}>
-            </CardHeader>
+            <CardTitle title={this.props.name}
+              subtitle={this.props.location} />
             <PhotoGrid photoList={this.props.photos} cols={4} rows={1}/>
           </div>
           <div className='pure-u-11-24' style={styles.testBorder}>

@@ -1,8 +1,9 @@
-import {blueGrey200} from 'material-ui/styles/colors';
+import {grey50, blueGrey200} from 'material-ui/styles/colors';
 
 const geodexTheme = {
   palette: {
-    primary1Color: blueGrey200
+    primary1Color: blueGrey200,
+    canvasColor: grey50
   }
 };
 
